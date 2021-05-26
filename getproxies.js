@@ -1,4 +1,4 @@
-// v2.5
+// v2.5.1
 function getProxies() {
   return new Promise((resolve) => {
     setTimeout(() => {
