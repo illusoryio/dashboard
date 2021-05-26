@@ -1,4 +1,4 @@
-// v2.3.2
+// v2.3.3
 function getProxies() {
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -98,7 +98,7 @@ function getProxies() {
                                   formatter: (_, row) =>
                                     gridjs.html(`
                                     
-                                    <select id="ipv6Dns-${row.cells[0].data}" class="ipv6Dns" onchange="changeDns(this.id)"> <option value="none" selected="" disabled="" hidden=""> ${row.cells[4].data} </option> <option value="Disabled"></option> </select>
+                                    <select id="ipv6Dns-${row.cells[0].data}" class="ipv6Dns" onchange="changeDns(this.id)"> <option value="none" selected="" disabled="" hidden=""> ${row.cells[4].data} </option> <option value="Disabled"> Disabled</option> </select>
                                     
                                     `),
                                 },
