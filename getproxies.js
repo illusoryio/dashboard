@@ -1,4 +1,4 @@
-// v3.1.4
+// v3.1.5
 function getProxies() {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -160,7 +160,7 @@ function getProxies() {
                                 formatter: (_, row) =>
                                   gridjs.html(`
                                       
-                                      <input type="text" value="${row.cells[8].data}" placeholder="https://webhook.site/example-trigger" class="whInput" id="onlineWhId-${row.cells[0].data}" oninput="changeOnlineWh(this.id)"><button id="onlineWhId-${row.cells[0].data}-btn" class="updateBtn" name="${row.cells[0].data}" onclick="updateOnlineWh(this.id)">Update</button>
+                                      <input type="text" value="${row.cells[8].data}" placeholder="https://webhook.site/example-trigger" class="whInput" id="onlineWhId-${row.cells[0].data}" oninput="changeOnlineWh(this.id)"><button id="onlineWhId-${row.cells[0].data}-btn" class="updateBtnWh" name="${row.cells[0].data}" onclick="updateOnlineWh(this.id)">Update</button>
                                       `),
                               },
                             ],
