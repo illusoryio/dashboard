@@ -1,4 +1,4 @@
-// v2.3.3
+// v3.1.3
 function getProxies() {
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -69,6 +69,10 @@ function getProxies() {
                                   id: "Super_Port_Button_Text", //7
                                   hidden: true,
                                 },
+                                {
+                                    id: "Online Webhook", //8
+                                    hidden: true,
+                                  },
                                 {
                                   id: "ISP_Name",
                                   name: "ISP Name",
@@ -151,6 +155,14 @@ function getProxies() {
                                     <input type="text" value="${row.cells[5].data}" placeholder="123.123.123.123" class="authUser" id="whitelistId-${row.cells[0].data}" oninput="changeWhitelist(this.id)"><button id="whitelistId-${row.cells[0].data}-btn" class="updateBtn" name="${row.cells[0].data}" onclick="updateWhitelist(this.id)">Update</button>
                                     `),
                                 },
+                                {
+                                    name: "Online Status Webhook",
+                                    formatter: (_, row) =>
+                                      gridjs.html(`
+                                      
+                                      <input type="text" value="${row.cells[8].data}" placeholder="https://webhook.site/example-trigger" class="whInput" id="onlineWhId-${row.cells[0].data}" oninput="changeOnlineWh(this.id)"><button id="onlineWhId-${row.cells[0].data}-btn" class="updateBtn" name="${row.cells[0].data}" onclick="updateOnlineWh(this.id)">Update</button>
+                                      `),
+                                  }
                               ],
                               sort: true,
                               search: true,
