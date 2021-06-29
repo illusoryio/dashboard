@@ -1,4 +1,4 @@
-// v3.1.5
+// v3.1.6
 function getProxies() {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -108,6 +108,7 @@ function getProxies() {
                               },
                               {
                                 name: "superPort",
+                                hidden: true,
                                 formatter: (_, row) =>
                                   gridjs.html(`
                                     
